@@ -1,0 +1,60 @@
+body1 {background-color : lightgray; color : darkblue}
+
+
+.box1{border-radius: 6px; width: 95%;
+    border: 2px solid green;
+    padding: 20px;
+    margin: 20px;}
+
+.row1{width: 95%;
+    border-top:  2px solid green;
+    padding: 5px;
+    }
+    
+    header{width: 99%;
+    background-color:#2172ce;
+    height:35px;
+    color:white;
+    text-align:center;
+    padding:5px;
+    font-size:30px}
+    
+    nav{
+        background-color:#FFAB00;
+        color:black;
+        line-height:30px;
+        height:700px;
+        width:10%;
+        float:left;
+        padding:5px;
+        
+    }
+    
+    main{
+        background-color:#4DD0E1;
+        color:black;
+        width:55%;
+        height:700px;
+        float:left;
+        overflow:scroll;
+        
+    }
+    
+    aside{
+        background-color:#4DD0E1;
+        height:700px;
+        width:450px;
+        float:left;
+        padding:5px;
+        
+    }
+    
+    footer{
+        
+        width:99%;
+        color:white;
+        background-color:#006064;
+        text-align:center;
+        clear:both;
+        padding: 5px;
+    }

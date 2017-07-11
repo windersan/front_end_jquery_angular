@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <form class="form-inline">
+        <input type="text" class="form-control" 
+               placeholder="Filter Currencies" 
+               ng-focus="changeLabel('Filter:ng - focus')"
+               ng-blur="changeLabel('Filter:ng - blur')"
+               ng-model="filterText">
+        <button class="btn btn-default" ng-click="resetFilter()">Reset</button>
+    </form>
+
+    <label>{{displayLabelText}}</label>
+
+
+
+    <ul class="list-group" ng-repeat="historyItem in filterHistory">
+        <li class="list-group-item">{{historyItem}}</li>
+    </ul>
+
+
+    <div class="panel panel-default" 
+         ng-repeat="currency in currencies| filter:filterText">
+        <div class="panel-heading">
+            <a href="#/currencies/{{currency.id}}">
+                {{currency.amount}} {{currency.currency}}
+            </a>
+        </div>
+    </div>
+</div>
